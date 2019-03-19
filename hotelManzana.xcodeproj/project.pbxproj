@@ -14,6 +14,7 @@
 		0FE85C0E2239133500E11869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE85C0C2239133500E11869 /* LaunchScreen.storyboard */; };
 		0FE85C162239142000E11869 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C152239142000E11869 /* DataModel.swift */; };
 		0FE85C182239E0F500E11869 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */; };
+		0FE85C1C224089AA00E11869 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0FE85C0F2239133500E11869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FE85C152239142000E11869 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectRoomTypeTableViewController.swift; path = ../SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				0FE85C002239133100E11869 /* AppDelegate.swift */,
 				0FE85C042239133100E11869 /* Main.storyboard */,
 				0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */,
+				0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */,
 				0FE85C152239142000E11869 /* DataModel.swift */,
 				0FE85C0A2239133500E11869 /* Assets.xcassets */,
 				0FE85C0C2239133500E11869 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				0FE85C092239133100E11869 /* hotelManzana.xcdatamodeld in Sources */,
 				0FE85C182239E0F500E11869 /* AddRegistrationTableViewController.swift in Sources */,
 				0FE85C162239142000E11869 /* DataModel.swift in Sources */,
+				0FE85C1C224089AA00E11869 /* SelectRoomTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

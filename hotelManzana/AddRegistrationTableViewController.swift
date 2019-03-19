@@ -16,6 +16,7 @@ class AddRegistrationTableViewController: UITableViewController {
         checkInDatePicker.minimumDate = midnightToday
         checkInDatePicker.minimumDate = midnightToday
         updateViews()
+        updateNumberOfGuests()
     }
 
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -28,6 +29,9 @@ class AddRegistrationTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
         
         print("Done tapped")
         print("first name: \(firstName)")
@@ -35,6 +39,10 @@ class AddRegistrationTableViewController: UITableViewController {
         print("first email: \(email)")
         print("check in \(checkInDate)")
         print("check out \(checkOutDate)")
+        print("number of adults \(numberOfAdults)")
+        print("number of children \(numberOfChildren)")
+        print("wifi: \(hasWifi)")
+        
     }
     
     @IBOutlet weak var checkInDateLabel: UILabel!
@@ -48,6 +56,23 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBAction func checkOutDateValuePickerChanged(_ sender: UIDatePicker) {
         updateViews()
     }
+    
+    //collect numbers
+    
+    @IBOutlet weak var numberOfAdultsLabel: UILabel!
+    @IBOutlet weak var numberOfAdultsStepper: UIStepper!
+    @IBOutlet weak var numberOfChildrenLabel: UILabel!
+    @IBOutlet weak var numberOfChildrenStepper: UIStepper!
+    
+    func updateNumberOfGuests(){
+        numberOfAdultsLabel.text = "\(Int(numberOfAdultsStepper.value))"
+        numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
     
     
     func updateViews() {
@@ -133,6 +158,12 @@ class AddRegistrationTableViewController: UITableViewController {
             break
         }
     }
+    
+    //wifi switch
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+    }
+    
     
     
 }
