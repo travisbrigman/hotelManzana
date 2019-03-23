@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol SelectRoomTypeTableViewControllerDelegate {
+    func didSelect(roomType: RoomType)
+}
+
 class SelectRoomTypeTableViewController: UITableViewController {
     
+    var delegate: SelectRoomTypeTableViewControllerDelegate?
     var roomType: RoomType?
 
     override func viewDidLoad() {
@@ -56,8 +61,11 @@ class SelectRoomTypeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         roomType = RoomType.all[indexPath.row]
+        delegate?.didSelect(roomType: roomType!)
         tableView.reloadData()
     }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
