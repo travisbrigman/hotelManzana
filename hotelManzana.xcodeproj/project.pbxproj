@@ -15,6 +15,7 @@
 		0FE85C162239142000E11869 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C152239142000E11869 /* DataModel.swift */; };
 		0FE85C182239E0F500E11869 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */; };
 		0FE85C1C224089AA00E11869 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */; };
+		0FE85C1E2248EA4600E11869 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE85C1D2248EA4600E11869 /* RegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0FE85C152239142000E11869 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 		0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectRoomTypeTableViewController.swift; path = ../SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
+		0FE85C1D2248EA4600E11869 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				0FE85C002239133100E11869 /* AppDelegate.swift */,
 				0FE85C042239133100E11869 /* Main.storyboard */,
+				0FE85C1D2248EA4600E11869 /* RegistrationTableViewController.swift */,
 				0FE85C172239E0F500E11869 /* AddRegistrationTableViewController.swift */,
 				0FE85C1B224089AA00E11869 /* SelectRoomTypeTableViewController.swift */,
 				0FE85C152239142000E11869 /* DataModel.swift */,
@@ -148,6 +151,7 @@
 				0FE85C092239133100E11869 /* hotelManzana.xcdatamodeld in Sources */,
 				0FE85C182239E0F500E11869 /* AddRegistrationTableViewController.swift in Sources */,
 				0FE85C162239142000E11869 /* DataModel.swift in Sources */,
+				0FE85C1E2248EA4600E11869 /* RegistrationTableViewController.swift in Sources */,
 				0FE85C1C224089AA00E11869 /* SelectRoomTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

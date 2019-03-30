@@ -46,29 +46,29 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
-        let firstName = firstNameTextField.text ?? ""
-        let lastName = lastNameTextField.text ?? ""
-        let email = emailTextField.text ?? ""
-        let checkInDate = checkInDatePicker.date
-        let checkOutDate = checkOutDatePicker.date
-        let numberOfAdults = Int(numberOfAdultsStepper.value)
-        let numberOfChildren = Int(numberOfChildrenStepper.value)
-        let hasWifi = wifiSwitch.isOn
-        let roomChoice = roomType?.name ?? "Not Set"
-        
-        print("Done tapped")
-        print("first name: \(firstName)")
-        print("last name: \(lastName)")
-        print("first email: \(email)")
-        print("check in \(checkInDate)")
-        print("check out \(checkOutDate)")
-        print("number of adults \(numberOfAdults)")
-        print("number of children \(numberOfChildren)")
-        print("wifi: \(hasWifi)")
-        print("Room Choice: \(roomChoice)")
-        
-    }
+//    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+//        let firstName = firstNameTextField.text ?? ""
+//        let lastName = lastNameTextField.text ?? ""
+//        let email = emailTextField.text ?? ""
+//        let checkInDate = checkInDatePicker.date
+//        let checkOutDate = checkOutDatePicker.date
+//        let numberOfAdults = Int(numberOfAdultsStepper.value)
+//        let numberOfChildren = Int(numberOfChildrenStepper.value)
+//        let hasWifi = wifiSwitch.isOn
+//        let roomChoice = roomType?.name ?? "Not Set"
+//        
+//        print("Done tapped")
+//        print("first name: \(firstName)")
+//        print("last name: \(lastName)")
+//        print("first email: \(email)")
+//        print("check in \(checkInDate)")
+//        print("check out \(checkOutDate)")
+//        print("number of adults \(numberOfAdults)")
+//        print("number of children \(numberOfChildren)")
+//        print("wifi: \(hasWifi)")
+//        print("Room Choice: \(roomChoice)")
+//        
+//    }
     
     @IBOutlet weak var checkInDateLabel: UILabel!
     @IBOutlet weak var checkInDatePicker: UIDatePicker!
